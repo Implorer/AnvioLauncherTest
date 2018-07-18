@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AnvioLauncherTest.Entities.Processors
+﻿namespace AnvioLauncherTest.Entities.Processors
 {
     public class Processor : IProcessor
     {

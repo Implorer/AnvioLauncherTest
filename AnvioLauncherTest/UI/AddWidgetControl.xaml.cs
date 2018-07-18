@@ -16,6 +16,7 @@ namespace AnvioLauncherTest.UI
 
         private void Add_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
+            Logger.LogMessage($"Start adding new widget");
             WidgetExtension.AddNewWidgetToCollection();
         }
     }

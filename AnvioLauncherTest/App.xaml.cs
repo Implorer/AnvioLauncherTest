@@ -16,6 +16,12 @@ namespace AnvioLauncherTest
             Settings.Default.UpgradeIfRequired();
         }
 
+        protected override void OnExit(ExitEventArgs e)
+        {
+            base.OnExit(e);
+            Settings.Default.Save();
+        }
+
         private void App_OnDispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
         {
             Logger.LogError(e.Exception, "Unhandled exception");

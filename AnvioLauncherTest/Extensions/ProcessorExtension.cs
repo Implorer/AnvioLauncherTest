@@ -4,9 +4,9 @@ using AnvioLauncherTest.Entities.Processors;
 
 namespace AnvioLauncherTest.Extensions
 {
-    public static class ProcessorExtension
+    internal static class ProcessorExtension
     {
-        public static Process ProcessFile(this Processor processor, string filePath)
+        internal static Process ProcessFile(this Processor processor, string filePath)
         {
             try
             {
@@ -26,8 +26,6 @@ namespace AnvioLauncherTest.Extensions
                 Logger.LogError(ex);
                 return null;
             }
-            
         }
-
     }
 }

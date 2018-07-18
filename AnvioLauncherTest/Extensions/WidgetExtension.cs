@@ -7,9 +7,9 @@ using AnvioLauncherTest.UI;
 
 namespace AnvioLauncherTest.Extensions
 {
-    public static class WidgetExtension
+    internal static class WidgetExtension
     {
-        public static void SetProcessAndRun(this WidgetItem widget)
+        internal static void SetProcessAndRun(this WidgetItem widget)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace AnvioLauncherTest.Extensions
             }
         }
 
-        public static void KillRelatedProcess(this WidgetItem widget)
+        internal static void KillRelatedProcess(this WidgetItem widget)
         {
             try
             {
