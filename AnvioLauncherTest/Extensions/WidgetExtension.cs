@@ -54,7 +54,7 @@ namespace AnvioLauncherTest.Extensions
         {
             try
             {
-                widget.RelatedProcess.Kill();
+                widget.RelatedProcess?.Kill();
             }
             catch (InvalidOperationException ioe)
             {
