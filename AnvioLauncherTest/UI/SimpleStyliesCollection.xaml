@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:AnvioLauncherTest.UI">
+    <Style TargetType="{x:Type Border}" x:Name="BorderStyle">
+        <Setter Property="Background" Value="White" />
+        <Style.Triggers>
+            <Trigger Property="Border.IsMouseOver" Value="True">
+                <Setter Property="Border.Background" Value="AliceBlue" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

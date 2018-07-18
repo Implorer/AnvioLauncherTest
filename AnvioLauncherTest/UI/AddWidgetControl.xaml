@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="AnvioLauncherTest.UI.AddWidgetControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:properties="clr-namespace:AnvioLauncherTest.Properties"
+             mc:Ignorable="d" 
+             Height="35"
+             d:DesignWidth="200">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="SimpleStyliesCollection.xaml" />
+    </UserControl.Resources>
+
+    <Border BorderThickness="2"
+            BorderBrush="DarkBlue" 
+            Style="{StaticResource {x:Type Border}}"
+            MouseDown="Add_OnMouseDown"            
+            >
+        <Label HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="{Binding Source={x:Static properties:Resources.AddWidget}}"/>
+        
+    </Border>
+</UserControl>
